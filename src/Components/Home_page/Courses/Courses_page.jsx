@@ -255,7 +255,7 @@ const Courses = () => {
   
   const [courses,setcourses] = useState([])
   useEffect(()=>{
-     axios.get("https://ten-0wfv.onrender.com/api/users/courses")
+     axios.get("https://ten-backend.onrender.com/api/users/courses")
      .then((res)=>setcourses(res.data.data))
       // setcourses(res) 
      .catch((err)=>console.log(err))
