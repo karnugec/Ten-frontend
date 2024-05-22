@@ -283,7 +283,7 @@ const CourseDetails = () => {
   // ];
   
   useEffect(()=>{
-    axios.get(`https://ten-0wfv.onrender.com/api/users/coursedetails/${id}`)
+    axios.get(`https://ten-backend.onrender.com/api/users/coursedetails/${id}`)
     .then((res)=>SetCourse(res.data.courseDetails))
     .catch((Err)=>console.log(Err))
   },[id])
